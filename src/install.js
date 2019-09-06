@@ -1,7 +1,5 @@
 import clock from './clock.vue';
 
-module.exports = {
-  install: function (Vue, options) {
-    Vue.component('vue-clock', clock);
-  }
-};
+clock.install = Vue => Vue.component('vue-clock-krasewallet', clock)
+
+export default clock
