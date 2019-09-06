@@ -1,0 +1,59 @@
+{
+  "name": "vue-clock-krasewallet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "rimraf ./dist && webpack --config ./build/webpack.renderer.config.js --mode=production",
+    "lint": "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter src test",
+    "lint:fix": "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter --fix src test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krasewallet/vue-clock.git"
+  },
+  "author": "krasewallet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krasewallet/vue-clock/issues"
+  },
+  "homepage": "https://github.com/krasewallet/vue-clock#readme",
+  "dependencies": {
+    "eslint-plugin-html": "^6.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-minify": "^0.5.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "file-loader": "^1.1.11",
+    "mini-css-extract-plugin": "0.4.0",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^15.2.4",
+    "vue-style-loader": "^4.1.0",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "~4.28.2",
+    "webpack-cli": "^3.0.8",
+    "webpack-merge": "^4.1.3"
+  }
+}
